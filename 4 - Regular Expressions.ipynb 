@@ -257,11 +257,7 @@
       "metadata": {
         "colab_type": "code",
         "id": "0neinsdwI-FQ",
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 343
-        },
-        "outputId": "715800cb-ad27-4ed9-e2aa-c77d45899127"
+        "colab": {}
       },
       "cell_type": "code",
       "source": [
@@ -272,143 +268,8 @@
         "\n",
         "first_ten_echo_reports.head(10) "
       ],
-      "execution_count": 9,
-      "outputs": [
-        {
-          "output_type": "execute_result",
-          "data": {
-            "text/html": [
-              "<div>\n",
-              "<style scoped>\n",
-              "    .dataframe tbody tr th:only-of-type {\n",
-              "        vertical-align: middle;\n",
-              "    }\n",
-              "\n",
-              "    .dataframe tbody tr th {\n",
-              "        vertical-align: top;\n",
-              "    }\n",
-              "\n",
-              "    .dataframe thead th {\n",
-              "        text-align: right;\n",
-              "    }\n",
-              "</style>\n",
-              "<table border=\"1\" class=\"dataframe\">\n",
-              "  <thead>\n",
-              "    <tr style=\"text-align: right;\">\n",
-              "      <th></th>\n",
-              "      <th>row_id</th>\n",
-              "      <th>subject_id</th>\n",
-              "      <th>hadm_id</th>\n",
-              "      <th>TEXT</th>\n",
-              "    </tr>\n",
-              "  </thead>\n",
-              "  <tbody>\n",
-              "    <tr>\n",
-              "      <th>0</th>\n",
-              "      <td>60694</td>\n",
-              "      <td>27494</td>\n",
-              "      <td>None</td>\n",
-              "      <td>PATIENT/TEST INFORMATION:\\nIndication: Atrial ...</td>\n",
-              "    </tr>\n",
-              "    <tr>\n",
-              "      <th>1</th>\n",
-              "      <td>60697</td>\n",
-              "      <td>468</td>\n",
-              "      <td>None</td>\n",
-              "      <td>PATIENT/TEST INFORMATION:\\nIndication: Source ...</td>\n",
-              "    </tr>\n",
-              "    <tr>\n",
-              "      <th>2</th>\n",
-              "      <td>60395</td>\n",
-              "      <td>9494</td>\n",
-              "      <td>None</td>\n",
-              "      <td>PATIENT/TEST INFORMATION:\\nIndication: H/O car...</td>\n",
-              "    </tr>\n",
-              "    <tr>\n",
-              "      <th>3</th>\n",
-              "      <td>60285</td>\n",
-              "      <td>24338</td>\n",
-              "      <td>None</td>\n",
-              "      <td>PATIENT/TEST INFORMATION:\\nIndication: Congest...</td>\n",
-              "    </tr>\n",
-              "    <tr>\n",
-              "      <th>4</th>\n",
-              "      <td>60113</td>\n",
-              "      <td>85490</td>\n",
-              "      <td>None</td>\n",
-              "      <td>PATIENT/TEST INFORMATION:\\nIndication: Aortic ...</td>\n",
-              "    </tr>\n",
-              "    <tr>\n",
-              "      <th>5</th>\n",
-              "      <td>60143</td>\n",
-              "      <td>5544</td>\n",
-              "      <td>None</td>\n",
-              "      <td>PATIENT/TEST INFORMATION:\\nIndication: Endocar...</td>\n",
-              "    </tr>\n",
-              "    <tr>\n",
-              "      <th>6</th>\n",
-              "      <td>60144</td>\n",
-              "      <td>5544</td>\n",
-              "      <td>None</td>\n",
-              "      <td>PATIENT/TEST INFORMATION:\\nIndication: Endocar...</td>\n",
-              "    </tr>\n",
-              "    <tr>\n",
-              "      <th>7</th>\n",
-              "      <td>60146</td>\n",
-              "      <td>5544</td>\n",
-              "      <td>None</td>\n",
-              "      <td>PATIENT/TEST INFORMATION:\\nIndication: Biopros...</td>\n",
-              "    </tr>\n",
-              "    <tr>\n",
-              "      <th>8</th>\n",
-              "      <td>60246</td>\n",
-              "      <td>18187</td>\n",
-              "      <td>None</td>\n",
-              "      <td>PATIENT/TEST INFORMATION:\\nIndication: Aortic ...</td>\n",
-              "    </tr>\n",
-              "    <tr>\n",
-              "      <th>9</th>\n",
-              "      <td>60247</td>\n",
-              "      <td>18187</td>\n",
-              "      <td>None</td>\n",
-              "      <td>PATIENT/TEST INFORMATION:\\nIndication: Shortne...</td>\n",
-              "    </tr>\n",
-              "  </tbody>\n",
-              "</table>\n",
-              "</div>"
-            ],
-            "text/plain": [
-              "   row_id  subject_id hadm_id  \\\n",
-              "0   60694       27494    None   \n",
-              "1   60697         468    None   \n",
-              "2   60395        9494    None   \n",
-              "3   60285       24338    None   \n",
-              "4   60113       85490    None   \n",
-              "5   60143        5544    None   \n",
-              "6   60144        5544    None   \n",
-              "7   60146        5544    None   \n",
-              "8   60246       18187    None   \n",
-              "9   60247       18187    None   \n",
-              "\n",
-              "                                                TEXT  \n",
-              "0  PATIENT/TEST INFORMATION:\\nIndication: Atrial ...  \n",
-              "1  PATIENT/TEST INFORMATION:\\nIndication: Source ...  \n",
-              "2  PATIENT/TEST INFORMATION:\\nIndication: H/O car...  \n",
-              "3  PATIENT/TEST INFORMATION:\\nIndication: Congest...  \n",
-              "4  PATIENT/TEST INFORMATION:\\nIndication: Aortic ...  \n",
-              "5  PATIENT/TEST INFORMATION:\\nIndication: Endocar...  \n",
-              "6  PATIENT/TEST INFORMATION:\\nIndication: Endocar...  \n",
-              "7  PATIENT/TEST INFORMATION:\\nIndication: Biopros...  \n",
-              "8  PATIENT/TEST INFORMATION:\\nIndication: Aortic ...  \n",
-              "9  PATIENT/TEST INFORMATION:\\nIndication: Shortne...  "
-            ]
-          },
-          "metadata": {
-            "tags": []
-          },
-          "execution_count": 9
-        }
-      ]
+      "execution_count": 0,
+      "outputs": []
     },
     {
       "metadata": {
@@ -424,11 +285,7 @@
       "metadata": {
         "colab_type": "code",
         "id": "TqaXivbLKPa_",
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 1361
-        },
-        "outputId": "515fdaac-e8f9-42e9-c87a-4172a2efe67f"
+        "colab": {}
       },
       "cell_type": "code",
       "source": [
@@ -438,95 +295,8 @@
         "#report = first_ten_echo_reports[\"TEXT\"][1] \n",
         "#Don't forget to rerun the block after you make changes!"
       ],
-      "execution_count": 35,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "text": [
-            "PATIENT/TEST INFORMATION:\n",
-            "Indication: Atrial fibrillation. Cerebrovascular event/TIA.\n",
-            "Height: (in) 59\n",
-            "Weight (lb): 103\n",
-            "BSA (m2): 1.39 m2\n",
-            "BP (mm Hg): 101/67\n",
-            "HR (bpm): 100\n",
-            "Status: Inpatient\n",
-            "Date/Time: [**2201-6-19**] at 16:00\n",
-            "Test: Portable TTE (Complete)\n",
-            "Doppler: Full Doppler and color Doppler\n",
-            "Contrast: None\n",
-            "Technical Quality: Adequate\n",
-            "\n",
-            "\n",
-            "INTERPRETATION:\n",
-            "\n",
-            "Findings:\n",
-            "\n",
-            "This study was compared to the prior study of [**2200-8-21**].\n",
-            "\n",
-            "\n",
-            "LEFT ATRIUM: Marked LA enlargement.\n",
-            "\n",
-            "RIGHT ATRIUM/INTERATRIAL SEPTUM: Mildly dilated RA. No ASD by 2D or color\n",
-            "Doppler.\n",
-            "\n",
-            "LEFT VENTRICLE: Mild symmetric LVH with normal cavity size and regional/global\n",
-            "systolic function (LVEF>55%). No LV mass/thrombus. [Intrinsic LV systolic\n",
-            "function likely depressed given the severity of valvular regurgitation.] TDI\n",
-            "E/e' >15, suggesting PCWP>18mmHg.\n",
-            "\n",
-            "RIGHT VENTRICLE: Normal RV chamber size and free wall motion.\n",
-            "\n",
-            "AORTA: Normal diameter of aorta at the sinus, ascending and arch levels.\n",
-            "\n",
-            "AORTIC VALVE: Bioprosthetic aortic valve prosthesis (AVR). AVR well seated,\n",
-            "normal leaflet/disc motion and transvalvular gradients. No AR.\n",
-            "\n",
-            "MITRAL VALVE: Mildly thickened mitral valve leaflets. Moderate mitral annular\n",
-            "calcification. Mild thickening of mitral valve chordae. Moderate (2+) MR.\n",
-            "\n",
-            "TRICUSPID VALVE: Mildly thickened tricuspid valve leaflets. Mild [1+] TR. Mild\n",
-            "PA systolic hypertension.\n",
-            "\n",
-            "PULMONIC VALVE/PULMONARY ARTERY: Normal pulmonic valve leaflet. No PS.\n",
-            "Physiologic PR.\n",
-            "\n",
-            "PERICARDIUM: No pericardial effusion.\n",
-            "\n",
-            "GENERAL COMMENTS: The rhythm appears to be atrial fibrillation.\n",
-            "\n",
-            "Conclusions:\n",
-            "The left atrium is markedly dilated. No atrial septal defect is seen by 2D or\n",
-            "color Doppler. There is mild symmetric left ventricular hypertrophy with\n",
-            "normal cavity size and regional/global systolic function (LVEF>55%).\n",
-            "[Intrinsic left ventricular systolic function is likely more depressed given\n",
-            "the severity of valvular regurgitation.] No masses or thrombi are seen in the\n",
-            "left ventricle. Tissue Doppler imaging suggests an increased left ventricular\n",
-            "filling pressure (PCWP>18mmHg). Right ventricular chamber size and free wall\n",
-            "motion are normal. A bioprosthetic aortic valve prosthesis is present. The\n",
-            "aortic valve prosthesis appears well seated, with normal leaflet/disc motion\n",
-            "and transvalvular gradients. No aortic regurgitation is seen. The mitral valve\n",
-            "leaflets are mildly thickened. Moderate (2+) mitral regurgitation is seen. The\n",
-            "tricuspid valve leaflets are mildly thickened. There is mild pulmonary artery\n",
-            "systolic hypertension. There is no pericardial effusion.\n",
-            "\n",
-            "IMPRESSION: No cardiac source of embolism seen. Mild symmetric left\n",
-            "ventricular hypertrophy with preserved global and regional biventricular\n",
-            "systolic function. Normally-functioning aortic valve bioprosthesis. Moderate\n",
-            "mitral regurgitation. Mild pulmonary hypertension.\n",
-            "\n",
-            "Compared with the prior study (images reviewed) of [**2200-8-21**], severely\n",
-            "stenotic native aortic valve has been replaced with a bioprosthesis. There has\n",
-            "been some regression of LVH. Mitral regurgitation is better appreciated on the\n",
-            "current study, but severity is likely similar. Pulmonary pressures are\n",
-            "slightly lower today. The other findings are similar.\n",
-            "\n",
-            "\n",
-            "\n"
-          ],
-          "name": "stdout"
-        }
-      ]
+      "execution_count": 0,
+      "outputs": []
     },
     {
       "metadata": {
@@ -576,11 +346,7 @@
       "metadata": {
         "colab_type": "code",
         "id": "b6_7iDmqLvoq",
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 34
-        },
-        "outputId": "0e4b1441-f249-408f-8825-3d65138285c4"
+        "colab": {}
       },
       "cell_type": "code",
       "source": [
@@ -591,16 +357,8 @@
         "else:\n",
         "  print('No hit for the regular expression')"
       ],
-      "execution_count": 12,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "text": [
-            "HR (bpm): 100\n"
-          ],
-          "name": "stdout"
-        }
-      ]
+      "execution_count": 0,
+      "outputs": []
     },
     {
       "metadata": {
@@ -616,11 +374,7 @@
       "metadata": {
         "colab_type": "code",
         "id": "zklIpC25RtMb",
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 34
-        },
-        "outputId": "f70d06e9-a757-41dc-a618-0103b2d25fd4"
+        "colab": {}
       },
       "cell_type": "code",
       "source": [
@@ -631,16 +385,8 @@
         "else:\n",
         "  print('No hit for the regular expression')"
       ],
-      "execution_count": 13,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "text": [
-            "59\n"
-          ],
-          "name": "stdout"
-        }
-      ]
+      "execution_count": 0,
+      "outputs": []
     },
     {
       "metadata": {
@@ -656,11 +402,7 @@
       "metadata": {
         "colab_type": "code",
         "id": "sqSU0tvGSPdO",
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 67
-        },
-        "outputId": "1986376a-94b5-4587-d3fd-76427c658719"
+        "colab": {}
       },
       "cell_type": "code",
       "source": [
@@ -673,18 +415,8 @@
         "else:\n",
         "  print('No hit for the regular expression')"
       ],
-      "execution_count": 36,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "text": [
-            "HR (bpm): 100\n",
-            "HR (bpm): \n",
-            "100\n"
-          ],
-          "name": "stdout"
-        }
-      ]
+      "execution_count": 0,
+      "outputs": []
     },
     {
       "metadata": {
@@ -700,11 +432,7 @@
       "metadata": {
         "colab_type": "code",
         "id": "AwfEpn5VTBX8",
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 185
-        },
-        "outputId": "ee172086-6bbc-4435-c4f2-57bcb3266550"
+        "colab": {}
       },
       "cell_type": "code",
       "source": [
@@ -720,25 +448,8 @@
         "    print('{} :: No hit for the regular expression')\n",
         "  "
       ],
-      "execution_count": 38,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "text": [
-            "0 :: 100\n",
-            "1 :: 80\n",
-            "2 :: 75\n",
-            "{} :: No hit for the regular expression\n",
-            "4 :: 107\n",
-            "5 :: 95\n",
-            "6 :: 78\n",
-            "7 :: 96\n",
-            "{} :: No hit for the regular expression\n",
-            "9 :: 64\n"
-          ],
-          "name": "stdout"
-        }
-      ]
+      "execution_count": 0,
+      "outputs": []
     },
     {
       "metadata": {
@@ -780,11 +491,7 @@
       "metadata": {
         "colab_type": "code",
         "id": "vDQWKND7hvV6",
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 343
-        },
-        "outputId": "0d6c8b04-3f40-492a-c6f2-5e1438249837"
+        "colab": {}
       },
       "cell_type": "code",
       "source": [
@@ -795,175 +502,14 @@
         "\n",
         "\n"
       ],
-      "execution_count": 51,
-      "outputs": [
-        {
-          "output_type": "execute_result",
-          "data": {
-            "text/html": [
-              "<div>\n",
-              "<style scoped>\n",
-              "    .dataframe tbody tr th:only-of-type {\n",
-              "        vertical-align: middle;\n",
-              "    }\n",
-              "\n",
-              "    .dataframe tbody tr th {\n",
-              "        vertical-align: top;\n",
-              "    }\n",
-              "\n",
-              "    .dataframe thead th {\n",
-              "        text-align: right;\n",
-              "    }\n",
-              "</style>\n",
-              "<table border=\"1\" class=\"dataframe\">\n",
-              "  <thead>\n",
-              "    <tr style=\"text-align: right;\">\n",
-              "      <th></th>\n",
-              "      <th>row_id</th>\n",
-              "      <th>subject_id</th>\n",
-              "      <th>hadm_id</th>\n",
-              "      <th>category</th>\n",
-              "      <th>description</th>\n",
-              "      <th>TEXT</th>\n",
-              "    </tr>\n",
-              "  </thead>\n",
-              "  <tbody>\n",
-              "    <tr>\n",
-              "      <th>0</th>\n",
-              "      <td>317108</td>\n",
-              "      <td>31608</td>\n",
-              "      <td>152365</td>\n",
-              "      <td>Respiratory</td>\n",
-              "      <td>Respiratory Care Shift Note</td>\n",
-              "      <td>Demographics\\n   Day of mechanical ventilation...</td>\n",
-              "    </tr>\n",
-              "    <tr>\n",
-              "      <th>1</th>\n",
-              "      <td>316869</td>\n",
-              "      <td>31608</td>\n",
-              "      <td>152365</td>\n",
-              "      <td>Respiratory</td>\n",
-              "      <td>Respiratory Care Shift Note</td>\n",
-              "      <td>Demographics\\n   Day of intubation:\\n   Day of...</td>\n",
-              "    </tr>\n",
-              "    <tr>\n",
-              "      <th>2</th>\n",
-              "      <td>316870</td>\n",
-              "      <td>31608</td>\n",
-              "      <td>152365</td>\n",
-              "      <td>Respiratory</td>\n",
-              "      <td>Respiratory Care Shift Note</td>\n",
-              "      <td>Demographics\\n   Day of intubation:\\n   Day of...</td>\n",
-              "    </tr>\n",
-              "    <tr>\n",
-              "      <th>3</th>\n",
-              "      <td>316953</td>\n",
-              "      <td>31608</td>\n",
-              "      <td>152365</td>\n",
-              "      <td>Respiratory</td>\n",
-              "      <td>Respiratory Care Shift Note</td>\n",
-              "      <td>Demographics\\n   Day of intubation:\\n   Day of...</td>\n",
-              "    </tr>\n",
-              "    <tr>\n",
-              "      <th>4</th>\n",
-              "      <td>315891</td>\n",
-              "      <td>31608</td>\n",
-              "      <td>152365</td>\n",
-              "      <td>Respiratory</td>\n",
-              "      <td>Respiratory Care Shift Note</td>\n",
-              "      <td>Demographics\\n   Day of intubation: [**2133-1-...</td>\n",
-              "    </tr>\n",
-              "    <tr>\n",
-              "      <th>5</th>\n",
-              "      <td>317413</td>\n",
-              "      <td>31608</td>\n",
-              "      <td>152365</td>\n",
-              "      <td>Respiratory</td>\n",
-              "      <td>Respiratory Care Shift Note</td>\n",
-              "      <td>Demographics\\n   Day of intubation:\\n   Day of...</td>\n",
-              "    </tr>\n",
-              "    <tr>\n",
-              "      <th>6</th>\n",
-              "      <td>317496</td>\n",
-              "      <td>31608</td>\n",
-              "      <td>152365</td>\n",
-              "      <td>Respiratory</td>\n",
-              "      <td>Respiratory Care Shift Note</td>\n",
-              "      <td>Demographics\\n   Day of intubation:\\n   Day of...</td>\n",
-              "    </tr>\n",
-              "    <tr>\n",
-              "      <th>7</th>\n",
-              "      <td>316735</td>\n",
-              "      <td>31608</td>\n",
-              "      <td>152365</td>\n",
-              "      <td>Respiratory</td>\n",
-              "      <td>Respiratory Care Shift Note</td>\n",
-              "      <td>Demographics\\n   Day of intubation:\\n   Day of...</td>\n",
-              "    </tr>\n",
-              "    <tr>\n",
-              "      <th>8</th>\n",
-              "      <td>316071</td>\n",
-              "      <td>31608</td>\n",
-              "      <td>152365</td>\n",
-              "      <td>Respiratory</td>\n",
-              "      <td>Respiratory Care Shift Note</td>\n",
-              "      <td>Demographics\\n   Day of intubation: [**2133-1-...</td>\n",
-              "    </tr>\n",
-              "    <tr>\n",
-              "      <th>9</th>\n",
-              "      <td>316116</td>\n",
-              "      <td>31608</td>\n",
-              "      <td>152365</td>\n",
-              "      <td>Respiratory</td>\n",
-              "      <td>Respiratory Care Shift Note</td>\n",
-              "      <td>Demographics\\n   Day of intubation:\\n   Day of...</td>\n",
-              "    </tr>\n",
-              "  </tbody>\n",
-              "</table>\n",
-              "</div>"
-            ],
-            "text/plain": [
-              "   row_id  subject_id  hadm_id      category                  description  \\\n",
-              "0  317108       31608   152365  Respiratory   Respiratory Care Shift Note   \n",
-              "1  316869       31608   152365  Respiratory   Respiratory Care Shift Note   \n",
-              "2  316870       31608   152365  Respiratory   Respiratory Care Shift Note   \n",
-              "3  316953       31608   152365  Respiratory   Respiratory Care Shift Note   \n",
-              "4  315891       31608   152365  Respiratory   Respiratory Care Shift Note   \n",
-              "5  317413       31608   152365  Respiratory   Respiratory Care Shift Note   \n",
-              "6  317496       31608   152365  Respiratory   Respiratory Care Shift Note   \n",
-              "7  316735       31608   152365  Respiratory   Respiratory Care Shift Note   \n",
-              "8  316071       31608   152365  Respiratory   Respiratory Care Shift Note   \n",
-              "9  316116       31608   152365  Respiratory   Respiratory Care Shift Note   \n",
-              "\n",
-              "                                                TEXT  \n",
-              "0  Demographics\\n   Day of mechanical ventilation...  \n",
-              "1  Demographics\\n   Day of intubation:\\n   Day of...  \n",
-              "2  Demographics\\n   Day of intubation:\\n   Day of...  \n",
-              "3  Demographics\\n   Day of intubation:\\n   Day of...  \n",
-              "4  Demographics\\n   Day of intubation: [**2133-1-...  \n",
-              "5  Demographics\\n   Day of intubation:\\n   Day of...  \n",
-              "6  Demographics\\n   Day of intubation:\\n   Day of...  \n",
-              "7  Demographics\\n   Day of intubation:\\n   Day of...  \n",
-              "8  Demographics\\n   Day of intubation: [**2133-1-...  \n",
-              "9  Demographics\\n   Day of intubation:\\n   Day of...  "
-            ]
-          },
-          "metadata": {
-            "tags": []
-          },
-          "execution_count": 51
-        }
-      ]
+      "execution_count": 0,
+      "outputs": []
     },
     {
       "metadata": {
         "colab_type": "code",
         "id": "9dA-auxEkzst",
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 1025
-        },
-        "outputId": "79e4c31a-2f55-428d-a9d5-ac128ee3d980"
+        "colab": {}
       },
       "cell_type": "code",
       "source": [
@@ -971,85 +517,14 @@
         "resp_report = first_ten_resp_reports[\"TEXT\"][1] \n",
         "print(resp_report)\n"
       ],
-      "execution_count": 46,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "text": [
-            "Demographics\n",
-            "   Day of intubation:\n",
-            "   Day of mechanical ventilation: 15\n",
-            "   Ideal body weight: 56.7 None\n",
-            "   Ideal tidal volume: 226.8 / 340.2 / 453.6 mL/kg\n",
-            "   Airway\n",
-            "   Airway Placement Data\n",
-            "   Known difficult intubation: No\n",
-            "   Procedure location:\n",
-            "   Reason:\n",
-            "   Tube Type\n",
-            "   ETT:\n",
-            "                   Position:  cm at teeth\n",
-            "                   Route:\n",
-            "                   Type:\n",
-            "                   Size:\n",
-            "   Tracheostomy tube:\n",
-            "                   Type: Cuffed, Perc Trach\n",
-            "                   Manufacturer: Portex\n",
-            "                   Size: 8.0mm\n",
-            "                   PMV:\n",
-            "   Cuff  Management:\n",
-            "                   Vol/Press:\n",
-            "                                   Cuff pressure: 25  cmH2O\n",
-            "                                   Cuff volume:   mL /\n",
-            "                   Airway problems:\n",
-            "                   Comments: [**1-22**] Bedside Trach done; [**1-23**] speech eval for\n",
-            "   PMV.\n",
-            "   Lung sounds\n",
-            "   RLL Lung Sounds: Clear\n",
-            "   RUL Lung Sounds: Clear\n",
-            "   LUL Lung Sounds: Clear\n",
-            "   LLL Lung Sounds: Diminished\n",
-            "   Comments:\n",
-            "   Secretions\n",
-            "   Sputum color / consistency: Blood Tinged / Thick\n",
-            "   Sputum source/amount: Suctioned / Small\n",
-            "   Comments: Lidocaine adm for persistent cough, used twice.\n",
-            "   Ventilation Assessment\n",
-            "   Level of breathing assistance: Continuous invasive ventilation\n",
-            "   Visual assessment of breathing pattern: Accessory muscle use; Comments:\n",
-            "   occasional when anxious.\n",
-            "   Assessment of breathing comfort:\n",
-            "   Non-invasive ventilation assessment:\n",
-            "   Invasive ventilation assessment:\n",
-            "   Trigger work assessment: Triggering synchronously\n",
-            "   Dysynchrony assessment:\n",
-            "   Comments: on PSV all shift, weaned to IPS of 10 cmh20 in AM.\\\n",
-            "   Plan\n",
-            "   Next 24-48 hours:\n",
-            "   Reason for continuing current ventilatory support:\n",
-            "   Respiratory Care Shift Procedures\n",
-            "   Transports:\n",
-            "   Destination (R/T)\n",
-            "   Time\n",
-            "   Complications\n",
-            "   Comments\n",
-            "   Bedside Procedures:\n",
-            "   Comments:\n",
-            "\n"
-          ],
-          "name": "stdout"
-        }
-      ]
+      "execution_count": 0,
+      "outputs": []
     },
     {
       "metadata": {
         "colab_type": "code",
         "id": "B64FV3XirixA",
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 689
-        },
-        "outputId": "f3ee1e05-fe15-4e08-fd2f-b94f4de9b1ee"
+        "colab": {}
       },
       "cell_type": "code",
       "source": [
@@ -1064,55 +539,8 @@
         "  else:\n",
         "    print('No hit for the regular expression')\n"
       ],
-      "execution_count": 53,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "text": [
-            "RLL Lung Sounds: Crackles\n",
-            "RLL Lung Sounds: Clear\n",
-            "RLL Lung Sounds: Clear\n",
-            "RLL Lung Sounds: Diminished\n",
-            "RLL Lung Sounds: Diminished\n",
-            "RLL Lung Sounds: Diminished\n",
-            "RLL Lung Sounds: Diminished\n",
-            "RLL Lung Sounds: Tubular\n",
-            "RLL Lung Sounds: Diminished\n",
-            "RLL Lung Sounds: Diminished\n",
-            "RLL Lung Sounds: Clear\n",
-            "RLL Lung Sounds:Clear\n",
-            "RLL Lung Sounds: Insp Wheeze\n",
-            "RLL Lung Sounds: Insp Wheeze\n",
-            "No hit for the regular expression\n",
-            "RLL Lung Sounds: Exp Wheeze\n",
-            "RLL Lung Sounds: Clear\n",
-            "RLL Lung Sounds: Diminished\n",
-            "RLL Lung Sounds: Clear\n",
-            "RLL Lung Sounds: Exp Wheeze\n",
-            "RLL Lung Sounds: Diminished\n",
-            "RLL Lung Sounds: Clear\n",
-            "RLL Lung Sounds: Diminished\n",
-            "RLL Lung Sounds: Diminished\n",
-            "RLL Lung Sounds: Diminished\n",
-            "RLL Lung Sounds: Diminished\n",
-            "RLL Lung Sounds: Crackles\n",
-            "RLL Lung Sounds: Insp/Exp Wheeze\n",
-            "RLL Lung Sounds: Exp Wheeze\n",
-            "RLL Lung Sounds: Diminished\n",
-            "RLL Lung Sounds: Clear\n",
-            "RLL Lung Sounds: Clear\n",
-            "RLL Lung Sounds: Crackles\n",
-            "RLL Lung Sounds: Crackles\n",
-            "RLL Lung Sounds: Diminished\n",
-            "RLL Lung Sounds: Diminished\n",
-            "RLL Lung Sounds: Clear\n",
-            "RLL Lung Sounds:\n",
-            "RLL Lung Sounds: Bronchial\n",
-            "RLL Lung Sounds: Crackles\n"
-          ],
-          "name": "stdout"
-        }
-      ]
+      "execution_count": 0,
+      "outputs": []
     },
     {
       "metadata": {
