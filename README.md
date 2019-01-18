@@ -18,3 +18,5 @@ Here is a link to the different modules:<br>
 <a href="https://colab.research.google.com/github/christinium/NZ-workshop/blob/master/5%20-%20Pneumothorax.ipynb">5 - Pneumothorax</a> (colab)
 <br>
 <a href="https://colab.research.google.com/github/christinium/NZ-workshop/blob/master/6%20-%20Obese.ipynb">6 - Obesity</a> (colab)
+<br>
+<a href="https://colab.research.google.com/github/christinium/NZ-workshop/blob/master/7%20-%20Extra%20exercises.ipynb">7 - Additional exercises</a> (colab)
